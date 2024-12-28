@@ -11,20 +11,24 @@
 <body>
     
     <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        
-        <div class="logo">Siththi Sakeena Marikkar</div>
-        
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#blog">Education</a></li>
-            <li><a href="#professional-skills">Coding Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#soft-skills">Soft Skills</a></li>
-            <li><a href="#fashion">Blogs</a></li>
-            <li><a href="#languages">Languages Spoken</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+    <div class="topnav">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+      </div>
+    
+    
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#about" onclick="closeNav()">About</a>
+    <a href="#blog" onclick="closeNav()">Education</a>
+    <a href="#professional-skills" onclick="closeNav()">Coding Skills</a>
+    <a href="#projects" onclick="closeNav()">Projects</a>
+    <a href="#soft-skills" onclick="closeNav()">Soft Skills</a>
+    <a href="#fashion" onclick="closeNav()">Blogs</a>
+    <a href="#languages" onclick="closeNav()">Languages Spoken</a>
+    <a href="#contact" onclick="closeNav()">Contact</a>
+  </div>
        
     </nav>
 

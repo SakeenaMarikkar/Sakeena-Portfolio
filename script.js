@@ -59,28 +59,37 @@ document.querySelectorAll('.fluid-progress').forEach(progressBar => {
     progressBar.style.width = fluency;
 });
 
+// Navbar toggle for mobile view
 document.addEventListener('DOMContentLoaded', function() {
     const navBar = document.querySelector('.navbar');
     const toggleButton = document.querySelector('.navbar-toggle');
-
+    
     toggleButton.addEventListener('click', function() {
         navBar.classList.toggle('hidden');
     });
+
+    // Function to manage navbar visibility based on screen size
+    function toggleNavbar() {
+        if (window.innerWidth < 768) {
+            navBar.classList.add('hidden'); // Hide navbar for mobile view by default
+        } else {
+            navBar.classList.remove('hidden'); // Show navbar for larger screens
+        }
+    }
+
+    // Run on page load
+    toggleNavbar();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", toggleNavbar);
 });
 
-
-
-function toggleNavbar() {
-    const navbar = document.getElementById("navbar");
-    if (window.innerWidth < 768) {
-      navbar.style.display = "none"; // Hide navbar for mobile view
-    } else {
-      navbar.style.display = "block"; // Show navbar for larger screens
-    }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
   }
 
-  // Run on page load
-  toggleNavbar();
-
-  // Add event listener for window resize
-  window.addEventListener("resize", toggleNavbar);
+  

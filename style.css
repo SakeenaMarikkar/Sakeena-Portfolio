@@ -6,45 +6,92 @@ body {
     color: #3b3b3b;
     line-height: 1.6;
 }
-.navbar-toggle {
-    display: none;
-    cursor: pointer;
-}
+
 .projects-grid .project-card img {
     width: 100%;
     height: auto;
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
+    
     .projects-grid .project-card {
         width: 100%;
     }
-    .body{
+    body {
         position: fixed;
     }
+
+    
     
 }
 
+
+.topnav {
+    overflow: hidden;
+    
+    position: fixed;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
 /* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: #fdeff6;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidenav a:hover {
+    color: #79baff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
     top: 0;
-    z-index: 1000;
-    transition: transform 0.3s ease-in-out; /* Transition for smooth effect */
-}
-
-.navbar.hidden {
-    transform: translateY(-100%);
-}
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
 .logo {
     font-size: 1.5rem;
@@ -69,8 +116,8 @@ body {
 }
 
 .navbar.hidden {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+    transform: translateY(-800%);
+    transition: transform 0.5s ease-in-out;
 }
 
 
