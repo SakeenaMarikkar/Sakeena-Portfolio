@@ -68,28 +68,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Hide the navbar when scrolling down and show it when scrolling up
-
-let lastScrollTop = 0;
-const navbar = document.querySelector('.navbar');
-
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        // Scrolling down
-        navbar.classList.add('hidden');
-    } else {
-        // Scrolling up
-        navbar.classList.remove('hidden');
-    }
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative scrolling
-});
-
-function myFunction() {
-    var x = document.getElementById("navbar");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }

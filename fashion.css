@@ -101,6 +101,10 @@ footer {
 
 
 @media only screen and (max-width:800px) {
+
+    .navbar {
+        display: none;
+    }
     /* For tablets: */
     .main {
       width: 80%;
@@ -114,6 +118,9 @@ footer {
     }
   }
   @media only screen and (max-width:500px) {
+    .navbar {
+        display: none;
+    }
     /* For mobile phones: */
     .menu, .main, .right {
       width: 100%;
