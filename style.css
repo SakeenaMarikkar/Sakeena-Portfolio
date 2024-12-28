@@ -23,6 +23,9 @@ body {
     .projects-grid .project-card {
         width: 100%;
     }
+    .body{
+        position: fixed;
+    }
 }
 
 /* Navbar Styles */
@@ -565,6 +568,7 @@ footer p {
   .contact-form button:hover {
     background: #0056b3;
   }
+
   @media only screen and (max-width: 600px) {
     /* General Styles */
     body {
@@ -665,5 +669,22 @@ footer p {
     footer {
         padding: 10px;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .pic2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .fashion {
+        width: 100%;
+        height: auto;
     }
 }
