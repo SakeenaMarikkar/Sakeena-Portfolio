@@ -547,20 +547,105 @@ footer p {
   .contact-form button:hover {
     background: #0056b3;
   }
-  
-@media only screen and (max-width:800px) {
-    /* For tablets: */
-    .main {
-      width: 80%;
-      padding: 0;
+  @media only screen and (max-width: 600px) {
+    /* General Styles */
+    body {
+        font-size: 14px;
+        line-height: 1.4;
     }
-    .right {
-      width: 100%;
+
+    /* Navbar Styles */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
     }
-  }
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    .menu, .main, .right {
-      width: 100%;
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bio h1 {
+        font-size: 1.8rem;
+    }
+
+    .bio p {
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Fashion Design Highlights */
+    .fashion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Professional Skills Section */
+    .professional-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Blog Section */
+    .blog-post {
+        text-align: left;
+    }
+
+    /* Education Section */
+    .education-box {
+        padding: 15px;
+    }
+
+    /* Languages Section */
+    .languages-box {
+        padding: 15px;
+    }
+
+    /* Soft Skills Section */
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+        font-size: 0.8rem;
     }
 }
