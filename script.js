@@ -68,13 +68,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+document.addEventListener('DOMContentLoaded', function() {
+    const navBar = document.querySelector('.navbar');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navBar.classList.add('hidden');
+        } else {
+            navBar.classList.remove('hidden');
+        }
+        lastScrollTop = scrollTop;
+    });
+});
