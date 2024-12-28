@@ -27,7 +27,7 @@ body {
         position: fixed;
     }
     .navbar.hidden {
-        transform: translateY(-100%);
+        transform: translateY(-800%);
         transition: transform 0.3s ease-in-out;
     }
     
