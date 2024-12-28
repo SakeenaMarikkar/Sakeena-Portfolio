@@ -68,3 +68,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+function toggleNavbar() {
+    const navbar = document.getElementById("navbar");
+    if (window.innerWidth < 768) {
+      navbar.style.display = "none"; // Hide navbar for mobile view
+    } else {
+      navbar.style.display = "block"; // Show navbar for larger screens
+    }
+  }
+
+  // Run on page load
+  toggleNavbar();
+
+  // Add event listener for window resize
+  window.addEventListener("resize", toggleNavbar);

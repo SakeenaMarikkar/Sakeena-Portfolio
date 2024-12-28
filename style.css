@@ -15,7 +15,7 @@ body {
     height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .navbar {
         display: none;
     }
@@ -25,10 +25,7 @@ body {
     .body{
         position: fixed;
     }
-    .navbar.hidden {
-        transform: translateY(-800%);
-        transition: transform 0.3s ease-in-out;
-    }
+    
 }
 
 /* Navbar Styles */
