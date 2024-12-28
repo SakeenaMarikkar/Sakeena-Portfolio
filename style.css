@@ -1,0 +1,549 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #3b3b3b;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fdeff6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #79baff;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #eef2f7;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+    max-width: 600px;
+}
+
+.bio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.bio p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #eef2f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #eef2f7;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.project-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.project-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* New Section: Fashion Design Highlights */
+.fashion-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.fashion-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.fashion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.fashion-card {
+    background-color: #f9f1f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.fashion-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.fashion-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.fashion-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.fashion-card .learn-more-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #e91e63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fashion-card .learn-more-button:hover {
+    background-color: #c2185b;
+}
+
+/* Skills Section (Coding and Professional Skills) */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #eef2f7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Fluentness Bar */
+.fluid-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.fluid-progress {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #007bff;
+    width: 0; /* Set dynamic width through JS */
+}
+
+/* Professional Skills Section */
+.professional-skills-section {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.professional-skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.professional-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.professional-skill-card {
+    background-color: #eef2f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.professional-skill-card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Blog Section for Professional Skills and Achievements */
+.blog-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.blog-post {
+    background-color: #eef2f7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Education Section - Brighter Style */
+.education-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.education-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.education-box ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.education-box li {
+    padding: 10px 0;
+}
+
+/* Languages Section - Brighter Style */
+.languages-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.languages-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.languages-box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.languages-box ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.languages-box li {
+    padding: 10px 0;
+}
+
+/* Soft Skills Section */
+.soft-skills-section {
+    padding: 50px 20px;
+    background-color: #fdf3f9;
+    text-align: center;
+}
+
+.soft-skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.soft-skill-card {
+    background-color: #ffecfa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.soft-skill-card p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Fluentness Bar */
+.fluid-bar2 {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.fluid-progress2 {
+    height: 10px;
+    border-radius: 10px;
+    background-color: #c2185b;
+    width: 0; /* Set dynamic width through JS */
+}
+
+.pic{
+    align-items: center;
+    width: 576px;
+    height: 440px;
+}
+
+.pic2{
+    align-items: center;
+    width: 380px;
+    height: 380px;
+}
+.fashion{
+    align-items: center;
+    width: 50%;
+    height: 380px;
+}
+
+/* Contact Me */
+
+  .contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .contact-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .contact-form button:hover {
+    background: #0056b3;
+  }
