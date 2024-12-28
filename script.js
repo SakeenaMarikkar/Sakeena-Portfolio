@@ -71,18 +71,16 @@ document.addEventListener('DOMContentLoaded', function() {
 // Hide the navbar when scrolling down and show it when scrolling up
 
 let lastScrollTop = 0;
-    const navbar = document.querySelector('.navbar');
+const navbar = document.querySelector('.navbar');
 
-    window.addEventListener('scroll', () => {
-        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (currentScrollTop > lastScrollTop) {
-            // Scrolling down, hide the navbar
-            navbar.classList.add('hidden');
-        } else {
-            // Scrolling up, show the navbar
-            navbar.classList.remove('hidden');
-        }
-
-        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For mobile or negative scrolling
-    });
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.add('hidden');
+    } else {
+        // Scrolling up
+        navbar.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Avoid negative scrolling
+});
