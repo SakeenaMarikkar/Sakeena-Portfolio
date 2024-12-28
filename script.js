@@ -68,17 +68,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const navBar = document.querySelector('.navbar');
-    let lastScrollTop = 0;
+// Hide the navbar when scrolling down and show it when scrolling up
 
-    window.addEventListener('scroll', function() {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > lastScrollTop) {
-            navBar.classList.add('hidden');
+let lastScrollTop = 0;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+        const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScrollTop > lastScrollTop) {
+            // Scrolling down, hide the navbar
+            navbar.classList.add('hidden');
         } else {
-            navBar.classList.remove('hidden');
+            // Scrolling up, show the navbar
+            navbar.classList.remove('hidden');
         }
-        lastScrollTop = scrollTop;
+
+        lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For mobile or negative scrolling
     });
-});

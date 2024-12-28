@@ -26,6 +26,11 @@ body {
     .body{
         position: fixed;
     }
+    .navbar.hidden {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    
 }
 
 /* Navbar Styles */
@@ -62,6 +67,12 @@ body {
 .nav-links a:hover {
     color: #79baff;
 }
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 /* About Section */
 .about-section {
