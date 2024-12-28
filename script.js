@@ -59,3 +59,11 @@ document.querySelectorAll('.fluid-progress').forEach(progressBar => {
     progressBar.style.width = fluency;
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const navBar = document.querySelector('.navbar');
+    const toggleButton = document.querySelector('.navbar-toggle');
+
+    toggleButton.addEventListener('click', function() {
+        navBar.classList.toggle('hidden');
+    });
+});
